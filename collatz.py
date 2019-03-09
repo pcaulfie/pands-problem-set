@@ -13,6 +13,7 @@ while x >= 1:
     if x % 2 == 0:
         x  = x // 2
         print(x)
+        break
     else:
         if x % 2 != 0:
             x = (x * 3) + 1
