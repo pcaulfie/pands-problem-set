@@ -9,7 +9,7 @@ x = int(input("Please enter a positive integer: "))
 # x is the value input by the user. 
 # INT will return an integer object constructed from a number or string x input by the user. https://docs.python.org/3/library/functions.html?highlight=int#int
 if x <1:
-# If user enters an integer, I do not want to store this value in my list, so I have set this condition    
+# If user enters a vlaue which is not a positive integer, I do not want to store this value in my list, so I have set this condition    
     print("Number is not a positive integer; please enter a whole number greater than 0!")
     # Advises user to input another number
 else:
@@ -17,19 +17,23 @@ else:
     list = [x]
     # The list will be used to store the value input by the user
     while x > 1:
-    # The while loop executes as long as the condition (here: x >= 1) remains true.
+    # The while loop executes as long as the condition (here: x > 1) remains true.
+    # I did not set condition x >= 1 as this would create an infinite loop.
         if x % 2 == 0:
-        # The argument is true if i can be divided by 6 but not 12
-                    # condition 1 % 6 == 0 is true when i can be divided by 6 with no remainder,
+        # Test to see if x is an even number, that is a number which divides by 2 with no remainder.
+            # The condition x % 2 == 0 is true when x can be divided by 2 with no remainder,
             x  = x // 2
+            # if condition above is true, divide x by 2. The product of which becomes the new value for x
             list.append(x)
-            # append the next value for x to the list
+            # append the new value for x to the list
             continue
             # continue with the next iteration of the loop using the new value for x
-        if  x % 2 != 0:
+        else:
+        # if condition above is not met, then x is an odd number 
             x = (x * 3) + 1
+            # multiply x by 3 and add 1. The product of which becomes the new value for x
             list.append(x)
-            # append the next value for x to the list
+            # append the new value for x to the list
         continue
         # then continue with the next iteration of the loop using the new value for x
     print(list)
