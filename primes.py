@@ -19,5 +19,10 @@ else:
         # If x divided by i with no remainder
             y = y + 1
             # if true add 1 to the count of factors for the number x
+    if y >= 3
+        print("That is not a prime.")
+    else:
+        print("That is a prime.")
+
 
 
