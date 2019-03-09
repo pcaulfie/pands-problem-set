@@ -10,10 +10,10 @@ x = int(input("Please enter a positive integer: "))
 # INT will return an integer object constructed from a number or string x input by the user. https://docs.python.org/3/library/functions.html?highlight=int#int
 while x >= 1:
 # The while loop executes as long as the condition (here: x >= 1) remains true.
-    if i % 2 == 0:
+    if x % 2 == 0:
         x  = x // 2
         print(x)
     else:
-        if i % 2 != 0:
+        if x % 2 != 0:
             x = (x * 3) + 1
             print(x)
