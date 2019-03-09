@@ -8,8 +8,8 @@
 x = int(input("Please enter a positive integer: "))
 # x is the value input by the user. 
 # INT will return an integer object constructed from a number or string x input by the user. https://docs.python.org/3/library/functions.html?highlight=int#int
-if x <1:
-# If user enters a vlaue which is not a positive integer, I do not want to store this value in my list, so I have set this condition    
+if x < 1:
+# If user enters a value which is not a positive integer, I do not want to store this value in my list, so I have set this condition    
     print("Number is not a positive integer; please enter a whole number greater than 0!")
     # Advises user to input another number
 else:
