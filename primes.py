@@ -13,13 +13,13 @@ else:
     y = 0
     # y will equal the count of factors of the number x.
     # A prime number is a whole number greater than 1 whose only factors are 1 and itself, therefore number of factors = 2 ie Y = 2
-    for i in the range (2, x):
+    for i in range (2, x):
     # i = range of positive numbers between 1 and x
-        if x % i == 0
+        if x % i == 0:
         # If x divided by i with no remainder
             y = y + 1
             # if true add 1 to the count of factors for the number x
-    if y >= 3
+    if y >= 3:
         print("That is not a prime.")
     else:
         print("That is a prime.")
