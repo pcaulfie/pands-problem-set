@@ -11,21 +11,24 @@ if x < 1:
 else:
 # User has input a positive integer, so condition is met and the program will proceed to check if the number is a prime.
     y = 0
-    # y will equal the count of factors of the number x.
+    # y will equal the count of factors of the number x. y is set to zero to begin with.
     # A prime number is a whole number greater than 1 whose only factors are 1 and itself, therefore number of factors = 2 ie Y = 2
+    # A factor is a whole numbers that can be divided evenly into another number. source: https://whatis.techtarget.com/definition/prime-number
     for i in range (2, x):
-    # i = range of positive numbers greater than 1 and x
+    # i = range of positive numbers greater than 1 and less than x
         if x % i == 0:
-        # If x divided by i with no remainder
+        # If x can be divided by i with no remainder, this is a factor of the number x
             y = y + 1
-            # if true add 1 to the count of factors for the number x
+            # i is a factor of x, the add 1 to the count of factors for the number x
             continue
             # continue with the next iteration of the loop using the next value for i
     if y == 0:
-    # if count of factors = 0, then condition is true and the number x is a prime number
+    # if count of factors = 0, then the program was unable to find any other factors of x (except itself and 1, which are not in the range)
+    # Therefore the number x is a prime number
         print("That is a prime.")
         # Print result if argument is true
     else:
+        # The count of factors is more than 0, which means that x is divisible by numbers other than itself and one
         print("That is not a prime.")
         # Print result if argument is false
 
