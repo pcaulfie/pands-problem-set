@@ -8,15 +8,29 @@
 x = int(input("Please enter a positive integer: "))
 # x is the value input by the user. 
 # INT will return an integer object constructed from a number or string x input by the user. https://docs.python.org/3/library/functions.html?highlight=int#int
-list = [x]
-while x > 1:
-# The while loop executes as long as the condition (here: x >= 1) remains true.
-    if x % 2 == 0:
-        x  = x // 2
-        list.append(x)
+if x <1:
+# If user enters an integer, I do not want to store this value in my list, so I have set this condition    
+    print("Number is not a positive integer; please enter a whole number greater than 0!")
+    # Advises user to input another number
+else:
+# User has input a positive integer, so condition is met and the program will proceed to calculate the sequence.
+    list = [x]
+    # The list will be used to store the value input by the user
+    while x > 1:
+    # The while loop executes as long as the condition (here: x >= 1) remains true.
+        if x % 2 == 0:
+        # The argument is true if i can be divided by 6 but not 12
+                    # condition 1 % 6 == 0 is true when i can be divided by 6 with no remainder,
+            x  = x // 2
+            list.append(x)
+            # append the next value for x to the list
+            continue
+            # continue with the next iteration of the loop using the new value for x
+        if  x % 2 != 0:
+            x = (x * 3) + 1
+            list.append(x)
+            # append the next value for x to the list
         continue
-    if  x % 2 != 0:
-        x = (x * 3) + 1
-        list.append(x)
-    continue
-print(list)
+        # then continue with the next iteration of the loop using the new value for x
+    print(list)
+    # Output list of values, containing the original input value and the successive values which have been calculated by the program.
