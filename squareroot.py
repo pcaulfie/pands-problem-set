@@ -3,4 +3,7 @@
 
 x = float(input("Please enter a positive number: "))
 # x is the value input by the user, converted into decimat using float data type, ref https://docs.python.org/3.3/library/stdtypes.html 
-print(sqrt(x))
+import math
+# https://www.geeksforgeeks.org/python-math-function-sqrt/
+print(round(math.sqrt(x),1))
+# sqrt() function is an inbuilt function in Python programming language that returns the square root of any number.
