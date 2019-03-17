@@ -5,3 +5,6 @@
 # x axis values 
 x = list(range(5))
 print(x)
+# y axis values 
+y = [x*0 for x in range(5)]
+print(y)
