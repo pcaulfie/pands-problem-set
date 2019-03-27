@@ -28,7 +28,7 @@ y2= [i**2 for i in x]
 # plotting the line 2 points  
 plt.plot(x2, y2, label = "Function x²") 
 
-# Line 3 points
+# Define Line 3 points
 # x axis values
 x3 = x
 # y axis value, 
