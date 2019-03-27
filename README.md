@@ -37,16 +37,17 @@ No - today does not begin with a T.
 Overview of solution
 1. Import the datetime module to retrieve the current date. Source: https://www.w3schools.com/python/python_datetime.asp
 2. If Statement is used to test if today is Tuesday
-2.1. Function datetime.datetime.today  is used to find what day of week is today,source https://www.pythonforbeginners.com/basics/python-datetime-time-examples
-2.2. Function datetime.weekday() return the day of the week as an integer, where Monday is 0 and Sunday is 6, source https://docs.python.org/2/library/datetime.html
-2.3.  Argument is true if today is Tuesday, where Tuesday is represented by integer 1
-2.4 If argument is true print("Yes - today begins with a T.")
- # The print() function writes the quotation when argument is true
-3. ELIF Statement is used to test if today is Thursday
-3.1 Argument is true if today is Thursday, where Thursday is represented by integer 3
-3.2 IIf argument is true print("Yes - today begins with a T.")
-4. ELSE statement is used where today is neither Tuesday or Thursday, ie weekday corresponding to today is neither 1 or 3
-4.1   prints("No - today does not begin with a T.")
+3 Function datetime.datetime.today  is used to find what day of week is today,source https://www.pythonforbeginners.com/basics/python-datetime-time-examples
+4. Function datetime.weekday() return the day of the week as an integer, where Monday is 0 and Sunday is 6, source https://docs.python.org/2/library/datetime.html
+5.  Argument is true if today is Tuesday, where Tuesday is represented by integer 1
+6. If argument is true print("Yes - today begins with a T.")
+7. The print() function writes the quotation when argument is true
+8. ELIF Statement is used to test if today is Thursday
+9. Argument is true if today is Thursday, where Thursday is represented by integer 3
+10. IIf argument is true print("Yes - today begins with a T.")
+11. ELSE statement is used where today is neither Tuesday or Thursday, ie weekday corresponding to today is neither 1 or 3
+12.   prints("No - today does not begin with a T.")
+
 
 ```
 Link to Solution : https://github.com/pcaulfie/pands-problem-set/blob/master/begins-with-t.py
@@ -63,14 +64,14 @@ etc
 9990
 ```
 Overview of solution
-1. Define the variable "i" : i is contained in a range of numbers between 1000 and 10000
-1.1 Use For loop to test which numbers in range fulfil the conditions of the argument
-2. Define The argument is true if i can be divided by 6 but not 12
-2.1 Define 1st condition: argument is true if i can be divided by 6 with no remainder, 
-2.2 Define 2nd condition:  argument is true when i divided by 12 gives a remainder,
-2.3 Both conditions must be met for argument to be true, hence "and" function.
-2.4 print i if argument is true
-3.0 If agument is false, contininue to test argument with next value in range which becomes new value for i
+Define the variable "i" : i is contained in a range of numbers between 1000 and 10000
+Use For loop to test which numbers in range fulfil the conditions of the argument
+Define The argument is true if i can be divided by 6 but not 12
+Define 1st condition: argument is true if i can be divided by 6 with no remainder, 
+Define 2nd condition:  argument is true when i divided by 12 gives a remainder,
+Both conditions must be met for argument to be true, hence "and" function.
+print i if argument is true
+If agument is false, continue to test argument with next value in range which becomes new value for i
 
 ```
 Link to Solution : https://github.com/pcaulfie/pands-problem-set/blob/master/divisors.py
